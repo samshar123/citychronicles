@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="packages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">CityChronicles<span>.org</span></a>
+            <ul class="nav-menu">
+                <li><a href="/#home">Home</a></li>
+                <li><a href="/#about">Our Story</a></li>
+                <li><a href="/#packages">Journeys</a></li>
+                <li><a href="/#video">Experience</a></li>
+                <li><a href="/#contact" class="nav-btn">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="detail-hero">
+        <img id="pkg-bg-img" src="" alt="Travel Destination">
+        <div class="detail-overlay">
+            <div class="container">
+                <span class="tag-white" id="pkg-tag">Loading...</span>
+                <h1 id="pkg-title">Loading...</h1>
+                <div class="hero-meta">
+                    <span id="pkg-duration"></span>
+                    <span id="pkg-location"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container detail-layout">
+            
+            <div class="detail-content">
+                
+                <h2 class="section-title">Overview</h2>
+                <p id="pkg-overview"></p>
+                
+                <h2 class="section-title">Itinerary</h2>
+                <div class="timeline" id="pkg-timeline">
+                    </div>
+
+                <h2 class="section-title">What's Included</h2>
+                <ul class="check-list-detail">
+                    <li><i class="fas fa-check"></i> Luxury Accommodation</li>
+                    <li><i class="fas fa-check"></i> Daily Breakfast & Selected Dinners</li>
+                    <li><i class="fas fa-check"></i> Private Airport Transfers</li>
+                    <li><i class="fas fa-check"></i> Expert Local Guide</li>
+                    <li><i class="fas fa-check"></i> Entrance Fees to All Sites</li>
+                </ul>
+
+                <h2 class="section-title">Photo Gallery</h2>
+                <div class="gallery-grid" id="pkg-gallery">
+                    </div>
+
+            </div>
+
+            <aside class="detail-sidebar">
+                <div class="booking-card">
+                    <div class="price-header">
+                        <span class="label">Starting From</span>
+                        <span class="amount" id="pkg-price">$0</span>
+                    </div>
+                    
+                    <form class="booking-form">
+                        <label>Travel Date</label>
+                        <input type="date">
+                        
+                        <label>Guests</label>
+                        <select>
+                            <option>1 Traveler</option>
+                            <option>2 Travelers</option>
+                            <option>3 Travelers</option>
+                            <option>4+ Travelers</option>
+                        </select>
+
+                        <button class="btn btn-primary full-width">Request Booking</button>
+                    </form>
+                    
+                    <div class="help-text">
+                        <i class="fas fa-info-circle"></i> No payment required today.
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2025 CityChronicles.org</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

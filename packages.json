@@ -1,0 +1,143 @@
+[
+    {
+        "id": "paris",
+        "title": "The Parisian Auteur",
+        "tag": "Cultural",
+        "price": "$1,450",
+        "duration": "5 Days / 4 Nights",
+        "location": "Paris, France",
+        "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=800&auto=format&fit=crop",
+        "heroImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=800&auto=format&fit=crop",
+        "overview": "Discover a side of Paris often missed by tourists. From private viewings at art ateliers in Montmartre to a masterclass in French pastry making, this journey is designed for the refined traveler looking to immerse themselves in the true culture of France.",
+        "gallery": [
+            "https://images.unsplash.com/photo-1509299349698-dd22323b5963?q=80&w=600&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1471623320832-752e8bbf8413?q=80&w=600&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1520939817895-060bdaf4dec1?q=80&w=600&auto=format&fit=crop"
+        ],
+        "itinerary": [
+            { "day": "01", "title": "Arrival & Private Dinner", "desc": "Private transfer to your boutique hotel in Le Marais. Evening welcome dinner on a private Seine river cruise to meet your guides." },
+            { "day": "02", "title": "Hidden Art of Montmartre", "desc": "A guided walking tour of the artists' quarter, visiting studios of upcoming painters that are usually closed to the public." },
+            { "day": "03", "title": "Culinary Masterclass", "desc": "Visit a local market to pick fresh ingredients, followed by a cooking class with a Michelin-star chef." },
+            { "day": "04", "title": "Louvre After Hours", "desc": "Exclusive evening access to the Louvre museum to view the Mona Lisa without the crowds." },
+            { "day": "05", "title": "Au Revoir", "desc": "Breakfast at a classic bistro followed by private transfer to Charles de Gaulle Airport." }
+        ]
+    },
+    {
+        "id": "dubai",
+        "title": "Dubai Skyline",
+        "tag": "Luxury",
+        "price": "$950",
+        "duration": "4 Days / 3 Nights",
+        "location": "Dubai, UAE",
+        "image": "https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?q=80&w=1600&auto=format&fit=crop",
+        "heroImage": "https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?q=80&w=1600&auto=format&fit=crop",
+        "overview": "Experience the futuristic marvels of Dubai. From the top of the Burj Khalifa to the golden dunes of the Arabian desert, this trip defines luxury. Includes VIP shopping experiences and yacht access.",
+        "gallery": [
+            "https://images.unsplash.com/photo-1546412414-e1885259563a?q=80&w=600&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1518684079-3c830dcef6c0?q=80&w=600&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?q=80&w=600&auto=format&fit=crop"
+        ],
+        "itinerary": [
+            { "day": "01", "title": "Arrival & Marina Cruise", "desc": "VIP Airport pickup and evening yacht cruise on the Dubai Marina with dinner." },
+            { "day": "02", "title": "Burj Khalifa & Mall", "desc": "VIP access to the 148th floor of the Burj Khalifa and a personal shopper experience at Dubai Mall." },
+            { "day": "03", "title": "Desert Safari", "desc": "4x4 Dune bashing, camel riding, and a private BBQ dinner under the stars in a luxury desert camp." },
+            { "day": "04", "title": "Departure", "desc": "Free morning for leisure before private transfer to DXB Airport." }
+        ]
+    },
+    {
+        "id": "bali",
+        "title": "Bali Serenity",
+        "tag": "Wellness",
+        "price": "$1,200",
+        "duration": "7 Days / 6 Nights",
+        "location": "Ubud, Indonesia",
+        "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=800&auto=format&fit=crop",
+        "heroImage": "https://images.unsplash.com/photo-1559628233-eb1b1ee45a29?q=80&w=1600&auto=format&fit=crop",
+        "overview": "Reconnect with nature in the spiritual heart of Bali. This retreat focuses on mindfulness, featuring daily yoga sessions, waterfall hikes, and traditional Balinese healing ceremonies.",
+        "gallery": [
+            "https://images.unsplash.com/photo-1552168324-d612d77725e3?q=80&w=600&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1539365664431-a2700c54a816?q=80&w=600&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=600&auto=format&fit=crop"
+        ],
+        "itinerary": [
+            { "day": "01", "title": "Ubud Arrival", "desc": "Check into your private rainforest villa. Welcome massage at the resort spa." },
+            { "day": "02", "title": "Sunrise Yoga & Temple", "desc": "Early morning yoga session followed by a visit to the Tirta Empul water temple for a purification ritual." },
+            { "day": "03", "title": "Rice Terrace Trek", "desc": "Trekking through the Tegalalang Rice Terrace with a local guide, followed by organic lunch." },
+            { "day": "04", "title": "Waterfall Chase", "desc": "Visit the hidden Tegenungan Waterfall and swim in natural pools." },
+            { "day": "05", "title": "Healer Visit", "desc": "Private session with a traditional Balinese healer." },
+            { "day": "06", "title": "Leisure Day", "desc": "Free day to explore Ubud market or relax by the pool." },
+            { "day": "07", "title": "Departure", "desc": "Transfer to Denpasar Airport." }
+        ]
+    },
+    {
+        "id": "swiss",
+        "title": "Alpine Solitude",
+        "tag": "Adventure",
+        "price": "$2,100",
+        "duration": "6 Days / 5 Nights",
+        "location": "Zurich, Switzerland",
+        "image": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?q=80&w=800&auto=format&fit=crop",
+        "heroImage": "https://images.unsplash.com/photo-1483058712412-4245e9b90334?q=80&w=1600&auto=format&fit=crop",
+        "overview": "Hiking through the silent valleys of the Swiss Alps, enjoying chocolate tasting, and scenic train rides. Perfect for those seeking fresh air and breathtaking mountain views.",
+        "gallery": [
+            "https://images.unsplash.com/photo-1528493358416-2d33457a4472?q=80&w=600&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1506540134423-380d0d806a64?q=80&w=600&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1527668752968-14dc70a27c73?q=80&w=600&auto=format&fit=crop"
+        ],
+        "itinerary": [
+            { "day": "01", "title": "Zurich Arrival", "desc": "City tour of Zurich and a sunset cruise on Lake Zurich." },
+            { "day": "02", "title": "Train to Interlaken", "desc": "Scenic train ride through the mountains to Interlaken." },
+            { "day": "03", "title": "Jungfraujoch", "desc": "Excursion to the 'Top of Europe' via the cogwheel train." },
+            { "day": "04", "title": "Grindelwald Hike", "desc": "Guided hiking trail beneath the Eiger North Face." },
+            { "day": "05", "title": "Lucerne", "desc": "Visit the Chapel Bridge and enjoy a Swiss fondue dinner." },
+            { "day": "06", "title": "Departure", "desc": "Train back to Zurich Airport for departure." }
+        ]
+    },
+    {
+        "id": "kyoto",
+        "title": "Kyoto Bloom",
+        "tag": "Heritage",
+        "price": "$1,800",
+        "duration": "5 Days / 4 Nights",
+        "location": "Kyoto, Japan",
+        "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=800&auto=format&fit=crop",
+        "heroImage": "https://images.unsplash.com/photo-1478436127897-769e1a3f0c21?q=80&w=1600&auto=format&fit=crop",
+        "overview": "Step back in time to ancient Japan. Walk through thousands of torii gates, participate in a traditional tea ceremony, and witness the geisha district of Gion at dusk.",
+        "gallery": [
+            "https://images.unsplash.com/photo-1490761668535-35497054764d?q=80&w=600&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=600&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1624253321171-1be53e12f5f4?q=80&w=600&auto=format&fit=crop"
+        ],
+        "itinerary": [
+            { "day": "01", "title": "Arrival in Kyoto", "desc": "Bullet train arrival and check-in to a traditional Ryokan." },
+            { "day": "02", "title": "Fushimi Inari", "desc": "Early morning hike through the famous red Torii gates." },
+            { "day": "03", "title": "Arashiyama Bamboo", "desc": "Walk through the bamboo grove and visit the Tenryu-ji temple." },
+            { "day": "04", "title": "Gion District", "desc": "Evening walking tour of Gion hoping to spot Geishas, followed by Kaiseki dinner." },
+            { "day": "05", "title": "Departure", "desc": "Bullet train transfer to Osaka or Tokyo." }
+        ]
+    },
+    {
+        "id": "santorini",
+        "title": "Santorini Sunset",
+        "tag": "Romantic",
+        "price": "$1,650",
+        "duration": "6 Days / 5 Nights",
+        "location": "Santorini, Greece",
+        "image": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=800&auto=format&fit=crop",
+        "heroImage": "https://images.unsplash.com/photo-1613395877344-13d4c79e4df1?q=80&w=1600&auto=format&fit=crop",
+        "overview": "The ultimate romantic getaway. White-washed villas, blue domes, and the world's most famous sunset in Oia. Relax on volcanic beaches and taste local wines.",
+        "gallery": [
+            "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=600&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1601581875309-fafbf2d3ed92?q=80&w=600&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=600&auto=format&fit=crop"
+        ],
+        "itinerary": [
+            { "day": "01", "title": "Arrival in Thira", "desc": "Ferry arrival and transfer to cliffside hotel." },
+            { "day": "02", "title": "Oia Sunset", "desc": "Free day exploring Oia village followed by a sunset dinner reservation." },
+            { "day": "03", "title": "Volcano Cruise", "desc": "Catamaran cruise to the volcanic hot springs with lunch on board." },
+            { "day": "04", "title": "Wine Tasting", "desc": "Tour of 3 traditional wineries tasting Assyrtiko wine." },
+            { "day": "05", "title": "Red Beach", "desc": "Relaxation day at the famous Red Beach." },
+            { "day": "06", "title": "Departure", "desc": "Transfer to Santorini Airport." }
+        ]
+    }
+]
