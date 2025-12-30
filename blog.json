@@ -1,0 +1,35 @@
+[
+    {
+        "id": "1",
+        "title": "5 Hidden Gems in Kyoto You Won't Find in Guidebooks",
+        "category": "Travel Tips",
+        "date": "October 12, 2025",
+        "author": "Elena M.",
+        "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=800&auto=format&fit=crop",
+        "heroImage": "https://images.unsplash.com/photo-1478436127897-769e1a3f0c21?q=80&w=1600&auto=format&fit=crop",
+        "excerpt": "Kyoto is famous for its temples, but the real magic lies in its quiet alleyways. Here are 5 spots to escape the crowds.",
+        "content": "<p>Kyoto is often defined by the Golden Pavilion and Fushimi Inari, but the true soul of the city is found in the quiet moments. On my last trip, I decided to wander without a map.</p><h3>1. The Moss Temple (Giou-ji)</h3><p>Tucked away in Arashiyama, this tiny temple is covered in vibrant green moss. Unlike the bamboo grove nearby, it is almost silent.</p><h3>2. Pontocho Alley at Dawn</h3><p>Most tourists visit Pontocho for dinner. But if you go at 6 AM, the lanterns are still lit, and the streets are empty. It feels like stepping back into the Edo period.</p>"
+    },
+    {
+        "id": "2",
+        "title": "Why Slow Travel is the Future of Luxury",
+        "category": "Lifestyle",
+        "date": "September 28, 2025",
+        "author": "David Chen",
+        "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=800&auto=format&fit=crop",
+        "heroImage": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop",
+        "excerpt": "In a world of instant gratification, the ultimate luxury is taking your time. Discover why 'Slow Travel' is trending.",
+        "content": "<p>We used to brag about how many countries we visited in a year. Now, the flex is how long you stayed in one place.</p><p>Slow travel isn't just about speed; it's about connection. It's choosing a villa over a hotel chain. It's learning to cook a local dish instead of just eating it.</p><blockquote>'The world reveals itself to those who travel on foot.' – Werner Herzog</blockquote><p>When you slow down, you stop being a tourist and start being a guest.</p>"
+    },
+    {
+        "id": "3",
+        "title": "A Photographer's Guide to the Swiss Alps",
+        "category": "Photography",
+        "date": "August 15, 2025",
+        "author": "Sarah Jenkins",
+        "image": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?q=80&w=800&auto=format&fit=crop",
+        "heroImage": "https://images.unsplash.com/photo-1483058712412-4245e9b90334?q=80&w=1600&auto=format&fit=crop",
+        "excerpt": "Chasing light in the mountains requires patience and the right gear. Here is how I captured the Matterhorn at sunrise.",
+        "content": "<p>The Alps are unforgiving but incredibly rewarding. The light changes every second.</p><h3>Best Time to Shoot</h3><p>Golden hour is obvious, but don't ignore the 'Blue Hour' just before sunrise. The snow reflects the blue sky, creating a magical, ethereal look.</p><h3>Gear Essentials</h3><p>Bring a circular polarizer. It cuts the glare from the snow and deepens the blue of the sky.</p>"
+    }
+]

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | City Chronicles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">CityChronicles<span>.org</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="packages.html">Journeys</a></li>
+                <li><a href="index.html#contact" class="nav-btn">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="construction-screen">
+        <div class="overlay-dark"></div>
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1600&auto=format&fit=crop" alt="Work in Progress" class="bg-img">
+        
+        <div class="content-box">
+            <div class="icon-wrapper">
+                <i class="fas fa-compass fa-spin-slow"></i>
+            </div>
+            
+            <h1>Uncharted Territory</h1>
+            <p>Our travel architects are currently crafting the itinerary for this journey. We are finalizing the hidden gems and exclusive experiences.</p>
+            
+            <div class="notify-form">
+                <span>Notify me when this journey launches:</span>
+                <form onsubmit="event.preventDefault(); alert('We will notify you!');">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+
+            <br>
+            <a href="packages.html" class="btn btn-secondary-white">Explore Other Journeys</a>
+        </div>
+    </section>
+
+</body>
+</html>

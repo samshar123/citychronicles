@@ -63,6 +63,80 @@ if (hamburger) {
     });
 }
 
+// ==========================================
+// 3. HERO CAROUSEL LOGIC
+// ==========================================
+
+const slides = document.querySelectorAll('.slide');
+const nextBtn = document.querySelector('.next-btn');
+const prevBtn = document.querySelector('.prev-btn');
+const dots = document.querySelectorAll('.dot');
+let currentSlide = 0;
+let slideInterval;
+
+// Function to Show a Specific Slide
+function showSlide(index) {
+    // Wrap around logic
+    if (index >= slides.length) currentSlide = 0;
+    else if (index < 0) currentSlide = slides.length - 1;
+    else currentSlide = index;
+
+    // Remove active class from all
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+
+    // Add active class to current
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+}
+
+// Next Slide Function
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+// Previous Slide Function
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+// Auto Play Setup (Changes every 5 seconds)
+function startAutoPlay() {
+    slideInterval = setInterval(nextSlide, 5000);
+}
+
+function stopAutoPlay() {
+    clearInterval(slideInterval);
+}
+
+// Event Listeners (Only if elements exist)
+if (slides.length > 0) {
+    // Buttons
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        stopAutoPlay();
+        startAutoPlay(); // Restart timer
+    });
+
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        stopAutoPlay();
+        startAutoPlay();
+    });
+
+    // Dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showSlide(index);
+            stopAutoPlay();
+            startAutoPlay();
+        });
+    });
+
+    // Start the loop
+    startAutoPlay();
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -179,4 +253,127 @@ function fillDetailsPage(pkg) {
             galleryContainer.innerHTML += `<img src="${imgUrl}" alt="Gallery Image">`;
         });
     }
+}
+
+// ==========================================
+    // 4. GALLERY PAGE LOGIC (NEW)
+    // ==========================================
+    const galleryGrid = document.getElementById('gallery-masonry-grid');
+    
+    if (galleryGrid) {
+        // Fetch the gallery.json file
+        fetch('gallery.json')
+            .then(response => {
+                if (!response.ok) throw new Error("Failed to load gallery");
+                return response.json();
+            })
+            .then(images => {
+                galleryGrid.innerHTML = ''; // Clear loading text
+                
+                // Loop through each image in JSON and add to HTML
+                images.forEach((img, index) => {
+                    // Add 'delay' classes to first few items for animation effect
+                    const delayClass = index % 3 === 0 ? '' : (index % 3 === 1 ? 'delay-1' : 'delay-2');
+                    
+                    const itemHTML = `
+                        <div class="masonry-item reveal-up ${delayClass}">
+                            <img src="${img.src}" alt="${img.alt}">
+                            <div class="overlay-text">
+                                <span>${img.title}</span>
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                    `;
+                    galleryGrid.innerHTML += itemHTML;
+                });
+
+                // Re-trigger animations for new elements
+                const newItems = document.querySelectorAll('.masonry-item');
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) entry.target.classList.add('active');
+                    });
+                }, { threshold: 0.1 });
+                
+                newItems.forEach(el => observer.observe(el));
+            })
+            .catch(error => {
+                console.error(error);
+                galleryGrid.innerHTML = '<p style="text-align:center; color:red;">Please use Live Server to view gallery.</p>';
+            });
+    }
+
+    // ==========================================
+    // 5. BLOG SYSTEM LOGIC (NEW)
+    // ==========================================
+    
+    // A. BLOG LISTING PAGE
+    const blogContainer = document.getElementById('blog-grid-container');
+    
+    if (blogContainer) {
+        fetch('blog.json')
+            .then(res => res.json())
+            .then(posts => {
+                blogContainer.innerHTML = ''; // Clear loading
+                
+                posts.forEach(post => {
+                    const blogCard = `
+                        <article class="trip-card reveal-up" style="opacity: 1; transform: translateY(0);">
+                            <div class="card-media">
+                                <img src="${post.image}" alt="${post.title}">
+                                <div class="price-pill" style="border-radius: 4px; padding: 5px 15px; font-size: 0.8rem;">
+                                    ${post.category}
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-meta">
+                                    <span><i class="far fa-calendar"></i> ${post.date}</span>
+                                    <span>${post.author}</span>
+                                </div>
+                                <h3>${post.title}</h3>
+                                <p>${post.excerpt}</p>
+                                <a href="blog-details.html?id=${post.id}" class="card-link">
+                                    Read Article <i class="fas fa-long-arrow-alt-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    `;
+                    blogContainer.innerHTML += blogCard;
+                });
+            })
+            .catch(err => blogContainer.innerHTML = "Error loading blogs. Use Live Server.");
+    }
+
+    // B. BLOG DETAILS PAGE
+    const blogTitle = document.getElementById('blog-title');
+    
+    if (blogTitle) {
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
+        
+        fetch('blog.json')
+            .then(res => res.json())
+            .then(posts => {
+                const post = posts.find(p => p.id === id);
+                
+                if (post) {
+                    document.getElementById('blog-hero-img').src = post.heroImage;
+                    document.getElementById('blog-category').textContent = post.category;
+                    document.getElementById('blog-title').textContent = post.title;
+                    document.getElementById('blog-date').textContent = post.date;
+                    document.getElementById('blog-author').textContent = post.author;
+                    // Note: using innerHTML for content to render HTML tags like <p> and <h3>
+                    document.getElementById('blog-body').innerHTML = post.content;
+                } else {
+                    document.querySelector('.detail-layout').innerHTML = "<h1>Article Not Found</h1>";
+                }
+            });
+    }
+
+    // In the Detail Page Logic part of script.js
+if (pkg) {
+    fillDetailsPage(pkg);
+} else {
+    // Redirect to construction page if ID is not found
+    window.location.href = "construction.html";
 }

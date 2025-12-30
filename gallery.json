@@ -1,0 +1,62 @@
+[
+    {
+        "src": "https://images.unsplash.com/photo-1534081333815-ae5019106622?q=80&w=600&auto=format&fit=crop",
+        "title": "Maldives",
+        "alt": "Ocean View"
+    },
+    {
+        "src": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=600&auto=format&fit=crop",
+        "title": "Swiss Alps",
+        "alt": "Mountain Landscape"
+    },
+    {
+        "src": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=600&auto=format&fit=crop",
+        "title": "Venice, Italy",
+        "alt": "Canal Boat"
+    },
+    {
+        "src": "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=600&auto=format&fit=crop",
+        "title": "Taj Mahal, India",
+        "alt": "Architecture"
+    },
+    {
+        "src": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600&auto=format&fit=crop",
+        "title": "Kyoto, Japan",
+        "alt": "Cherry Blossoms"
+    },
+    {
+        "src": "https://images.unsplash.com/photo-1512453979798-5ea904ac6605?q=80&w=600&auto=format&fit=crop",
+        "title": "Dubai, UAE",
+        "alt": "Skyline"
+    },
+    {
+        "src": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=600&auto=format&fit=crop",
+        "title": "Santorini, Greece",
+        "alt": "White Buildings"
+    },
+    {
+        "src": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=600&auto=format&fit=crop",
+        "title": "Paris, France",
+        "alt": "Eiffel Tower"
+    },
+    {
+        "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&w=600&auto=format&fit=crop",
+        "title": "Camping Adventure",
+        "alt": "Tent in Woods"
+    },
+    {
+        "src": "https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=600&auto=format&fit=crop",
+        "title": "Tokyo Nights",
+        "alt": "City Lights"
+    },
+    {
+        "src": "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=600&auto=format&fit=crop",
+        "title": "Greek Islands",
+        "alt": "Sea View"
+    },
+    {
+        "src": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=600&auto=format&fit=crop",
+        "title": "London Eye",
+        "alt": "London City"
+    }
+]
